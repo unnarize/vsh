@@ -1,0 +1,52 @@
+{
+  "name": "unnarize-language",
+  "displayName": "Unnarize Language Support",
+  "description": "Syntax highlighting and language support for Unnarize programming language",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:unnarize"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [{
+      "id": "unnarize",
+      "aliases": ["Unnarize", "unnarize"],
+      "extensions": [".gi"],
+      "configuration": "./language-configuration/configuration.json"
+    }],
+    "grammars": [{
+      "language": "unnarize",
+      "scopeName": "source.unnarize",
+      "path": "./syntaxes/unnarize.tmLanguage.json"
+    }],
+    "snippets": [{
+      "language": "unnarize",
+      "path": "./snippets/snippets.json"
+    }]
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Unnarize Language Team",
+  "publisher": "unnarizelanguageverse",
+  "license": "GPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unnarizelanguageverse/vsh"
+  },
+  "icon": "images/icon.png",
+  "keywords": [
+    "unnarize",
+    "language",
+    "syntax",
+    "highlighting"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "Function Declaration": {
+    "prefix": "func",
+    "body": [
+      "function ${1:functionName}($2) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Create a new function"
+  },
+  "If Statement": {
+    "prefix": "if",
+    "body": [
+      "if (${1:condition}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Create an if statement"
+  },
+  "If-Else Statement": {
+    "prefix": "ifelse",
+    "body": [
+      "if (${1:condition}) {",
+      "\t$2",
+      "} else {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Create an if-else statement"
+  },
+  "For Loop": {
+    "prefix": "for",
+    "body": [
+      "for (var ${1:i} = 0; $1 < ${2:count}; $1 = $1 + 1) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Create a for loop"
+  },
+  "While Loop": {
+    "prefix": "while",
+    "body": [
+      "while (${1:condition}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Create a while loop"
+  },
+  "Async Function": {
+    "prefix": "async",
+    "body": [
+      "async function ${1:functionName}($2) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Create an async function"
+  },
+  "Import Statement": {
+    "prefix": "import",
+    "body": "import \"${1:module}\" as ${2:alias};",
+    "description": "Import a module"
+  },
+  "Export Statement": {
+    "prefix": "export",
+    "body": "export function ${1:functionName}($2) {\n\t$0\n}",
+    "description": "Export a function"
+  },
+  "Print Statement": {
+    "prefix": "print",
+    "body": "print(\"${1:message}\");",
+    "description": "Print a message to console"
+  },
+  "Array Declaration": {
+    "prefix": "array",
+    "body": "var ${1:arr} = array();",
+    "description": "Create a new array"
+  },
+  "Map Declaration": {
+    "prefix": "map",
+    "body": "var ${1:map} = map();",
+    "description": "Create a new map"
+  }
+}
