@@ -1,0 +1,13 @@
+var name = "Unnarize";
+var number = 42;
+
+function greet(name) {
+    print("Hello, " + name + "!");
+    return "Done";
+}
+
+if (number > 10) {
+    greet(name);
+} else {
+    print("Number is too small");
+}
