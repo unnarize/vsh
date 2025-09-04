@@ -17,7 +17,7 @@
     "languages": [{
       "id": "unnarize",
       "aliases": ["Unnarize", "unnarize"],
-      "extensions": [".gi"],
+      "extensions": [".unna"],
       "configuration": "./language-configuration/configuration.json"
     }],
     "grammars": [{
